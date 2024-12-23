@@ -1,0 +1,183 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import sqlite3
+import csv
+
+csv_file_path = 'heart.csv'
+db_file_path = 'heart.db'
+
+conn = sqlite3.connect(db_file_path)
+cursor = conn.cursor()
+
+# Drop tables if they exist
+cursor.execute("DROP TABLE IF EXISTS patients;")
+cursor.execute("DROP TABLE IF EXISTS measurements;")
+cursor.execute("DROP TABLE IF EXISTS diagnosis;")
+
+# Create normalized tables
+cursor.execute("""
+CREATE TABLE patients (
+    patient_id INTEGER PRIMARY KEY,
+    age INTEGER,
+    sex TEXT
+);
+""")
+
+cursor.execute("""
+CREATE TABLE measurements (
+    meas_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER,
+    trestbps INTEGER,
+    chol INTEGER,
+    fbs INTEGER,
+    restecg INTEGER,
+    thalach INTEGER,
+    exang INTEGER,
+    oldpeak REAL,
+    slope INTEGER,
+    ca INTEGER,
+    thal INTEGER,
+    FOREIGN KEY(patient_id) REFERENCES patients(patient_id)
+);
+""")
+
+cursor.execute("""
+CREATE TABLE diagnosis (
+    diag_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    patient_id INTEGER,
+    cp_type INTEGER,
+    target INTEGER,
+    FOREIGN KEY(patient_id) REFERENCES patients(patient_id)
+);
+""")
+
+with open(csv_file_path, 'r', newline='', encoding='utf-8') as csvfile:
+    reader = csv.reader(csvfile)
+    header = next(reader)  # Read header row
+    # Print the header to see what columns are available
+    print("CSV Header:", header)
+
+    # Based on a typical heart dataset, you might have columns like:
+    # age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target
+    # Adjust column indices accordingly:
+    age_idx = header.index("age")
+    sex_idx = header.index("sex")
+    cp_idx = header.index("cp")
+    trestbps_idx = header.index("trestbps")
+    chol_idx = header.index("chol")
+    fbs_idx = header.index("fbs")
+    restecg_idx = header.index("restecg")
+    thalach_idx = header.index("thalach")
+    exang_idx = header.index("exang")
+    oldpeak_idx = header.index("oldpeak")
+    slope_idx = header.index("slope")
+    ca_idx = header.index("ca")
+    thal_idx = header.index("thal")
+    target_idx = header.index("target")
+
+    row_number = 1  # We'll use this to generate a surrogate patient_id
+
+    for row in reader:
+        patient_id_val = row_number
+        age_val = int(row[age_idx])
+        sex_val = row[sex_idx]
+        cp_val = int(row[cp_idx])
+        trestbps_val = int(row[trestbps_idx])
+        chol_val = int(row[chol_idx])
+        fbs_val = int(row[fbs_idx])
+        restecg_val = int(row[restecg_idx])
+        thalach_val = int(row[thalach_idx])
+        exang_val = int(row[exang_idx])
+        oldpeak_val = float(row[oldpeak_idx])
+        slope_val = int(row[slope_idx])
+        ca_val = int(row[ca_idx])
+        thal_val = int(row[thal_idx])
+        target_val = int(row[target_idx])
+
+        # Insert into patients table
+        cursor.execute("""
+            INSERT INTO patients (patient_id, age, sex)
+            VALUES (?, ?, ?)
+        """, (patient_id_val, age_val, sex_val))
+
+        # Insert into measurements table
+        cursor.execute("""
+            INSERT INTO measurements (
+                patient_id, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (patient_id_val, trestbps_val, chol_val, fbs_val, restecg_val, thalach_val, exang_val, oldpeak_val, slope_val, ca_val, thal_val))
+
+        # Insert into diagnosis table
+        cursor.execute("""
+            INSERT INTO diagnosis (patient_id, cp_type, target)
+            VALUES (?, ?, ?)
+        """, (patient_id_val, cp_val, target_val))
+
+        row_number += 1
+
+conn.commit()
+conn.close()
+
+print("Database created and populated successfully.")
+
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [0;32mIn[1], line 52[0m
+[1;32m     24[0m cursor[38;5;241m.[39mexecute([38;5;124m"""[39m
+[1;32m     25[0m [38;5;124mCREATE TABLE measurements ([39m
+[1;32m     26[0m [38;5;124m    meas_id INTEGER PRIMARY KEY AUTOINCREMENT,[39m
+[0;32m   (...)[0m
+[1;32m     39[0m [38;5;124m);[39m
+[1;32m     40[0m [38;5;124m"""[39m)
+[1;32m     42[0m cursor[38;5;241m.[39mexecute([38;5;124m"""[39m
+[1;32m     43[0m [38;5;124mCREATE TABLE diagnosis ([39m
+[1;32m     44[0m [38;5;124m    diag_id INTEGER PRIMARY KEY AUTOINCREMENT,[39m
+[0;32m   (...)[0m
+[1;32m     49[0m [38;5;124m);[39m
+[1;32m     50[0m [38;5;124m"""[39m)
+[0;32m---> 52[0m [38;5;28;01mwith[39;00m [38;5;28;43mopen[39;49m[43m([49m[43mcsv_file_path[49m[43m,[49m[43m [49m[38;5;124;43m'[39;49m[38;5;124;43mr[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mnewline[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43m'[39;49m[43m,[49m[43m [49m[43mencoding[49m[38;5;241;43m=[39;49m[38;5;124;43m'[39;49m[38;5;124;43mutf-8[39;49m[38;5;124;43m'[39;49m[43m)[49m [38;5;28;01mas[39;00m csvfile:
+[1;32m     53[0m     reader [38;5;241m=[39m csv[38;5;241m.[39mreader(csvfile)
+[1;32m     54[0m     header [38;5;241m=[39m [38;5;28mnext[39m(reader)  [38;5;66;03m# Read header row[39;00m
+
+File [0;32m/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/IPython/core/interactiveshell.py:324[0m, in [0;36m_modified_open[0;34m(file, *args, **kwargs)[0m
+[1;32m    317[0m [38;5;28;01mif[39;00m file [38;5;129;01min[39;00m {[38;5;241m0[39m, [38;5;241m1[39m, [38;5;241m2[39m}:
+[1;32m    318[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[1;32m    319[0m         [38;5;124mf[39m[38;5;124m"[39m[38;5;124mIPython won[39m[38;5;124m'[39m[38;5;124mt let you open fd=[39m[38;5;132;01m{[39;00mfile[38;5;132;01m}[39;00m[38;5;124m by default [39m[38;5;124m"[39m
+[1;32m    320[0m         [38;5;124m"[39m[38;5;124mas it is likely to crash IPython. If you know what you are doing, [39m[38;5;124m"[39m
+[1;32m    321[0m         [38;5;124m"[39m[38;5;124myou can use builtins[39m[38;5;124m'[39m[38;5;124m open.[39m[38;5;124m"[39m
+[1;32m    322[0m     )
+[0;32m--> 324[0m [38;5;28;01mreturn[39;00m [43mio_open[49m[43m([49m[43mfile[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: 'heart.csv'
+

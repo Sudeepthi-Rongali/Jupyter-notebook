@@ -1,0 +1,1924 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; SUDEEPTHI RONGALI Final Project</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'books/finalpythonfile';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="SUDEEPTHI RONGALI Final Project - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="SUDEEPTHI RONGALI Final Project - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Welcome to Sudeepthi Rongali’s Data Science Portfolio
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="final_project.html">Final Python Project CODE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sudeepthi_resume.html">Sudeepthi Rongali Resume</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fbooks/finalpythonfile.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/books/finalpythonfile.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1><no title></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">csv_file_path</span> <span class="o">=</span> <span class="s1">&#39;heart.csv&#39;</span>
+<span class="n">db_file_path</span> <span class="o">=</span> <span class="s1">&#39;heart.db&#39;</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db_file_path</span><span class="p">)</span>
+<span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+
+<span class="c1"># Drop tables if they exist</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DROP TABLE IF EXISTS patients;&quot;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DROP TABLE IF EXISTS measurements;&quot;</span><span class="p">)</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;DROP TABLE IF EXISTS diagnosis;&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create normalized tables</span>
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">CREATE TABLE patients (</span>
+<span class="s2">    patient_id INTEGER PRIMARY KEY,</span>
+<span class="s2">    age INTEGER,</span>
+<span class="s2">    sex TEXT</span>
+<span class="s2">);</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">CREATE TABLE measurements (</span>
+<span class="s2">    meas_id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">    patient_id INTEGER,</span>
+<span class="s2">    trestbps INTEGER,</span>
+<span class="s2">    chol INTEGER,</span>
+<span class="s2">    fbs INTEGER,</span>
+<span class="s2">    restecg INTEGER,</span>
+<span class="s2">    thalach INTEGER,</span>
+<span class="s2">    exang INTEGER,</span>
+<span class="s2">    oldpeak REAL,</span>
+<span class="s2">    slope INTEGER,</span>
+<span class="s2">    ca INTEGER,</span>
+<span class="s2">    thal INTEGER,</span>
+<span class="s2">    FOREIGN KEY(patient_id) REFERENCES patients(patient_id)</span>
+<span class="s2">);</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">CREATE TABLE diagnosis (</span>
+<span class="s2">    diag_id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">    patient_id INTEGER,</span>
+<span class="s2">    cp_type INTEGER,</span>
+<span class="s2">    target INTEGER,</span>
+<span class="s2">    FOREIGN KEY(patient_id) REFERENCES patients(patient_id)</span>
+<span class="s2">);</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">)</span>
+    <span class="n">header</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>  <span class="c1"># Read header row</span>
+    <span class="c1"># Print the header to see what columns are available</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CSV Header:&quot;</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+
+    <span class="c1"># Based on a typical heart dataset, you might have columns like:</span>
+    <span class="c1"># age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target</span>
+    <span class="c1"># Adjust column indices accordingly:</span>
+    <span class="n">age_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">)</span>
+    <span class="n">sex_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;sex&quot;</span><span class="p">)</span>
+    <span class="n">cp_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;cp&quot;</span><span class="p">)</span>
+    <span class="n">trestbps_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;trestbps&quot;</span><span class="p">)</span>
+    <span class="n">chol_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;chol&quot;</span><span class="p">)</span>
+    <span class="n">fbs_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;fbs&quot;</span><span class="p">)</span>
+    <span class="n">restecg_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;restecg&quot;</span><span class="p">)</span>
+    <span class="n">thalach_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;thalach&quot;</span><span class="p">)</span>
+    <span class="n">exang_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;exang&quot;</span><span class="p">)</span>
+    <span class="n">oldpeak_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;oldpeak&quot;</span><span class="p">)</span>
+    <span class="n">slope_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;slope&quot;</span><span class="p">)</span>
+    <span class="n">ca_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;ca&quot;</span><span class="p">)</span>
+    <span class="n">thal_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;thal&quot;</span><span class="p">)</span>
+    <span class="n">target_idx</span> <span class="o">=</span> <span class="n">header</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s2">&quot;target&quot;</span><span class="p">)</span>
+
+    <span class="n">row_number</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># We&#39;ll use this to generate a surrogate patient_id</span>
+
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">patient_id_val</span> <span class="o">=</span> <span class="n">row_number</span>
+        <span class="n">age_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">age_idx</span><span class="p">])</span>
+        <span class="n">sex_val</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="n">sex_idx</span><span class="p">]</span>
+        <span class="n">cp_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">cp_idx</span><span class="p">])</span>
+        <span class="n">trestbps_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">trestbps_idx</span><span class="p">])</span>
+        <span class="n">chol_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">chol_idx</span><span class="p">])</span>
+        <span class="n">fbs_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">fbs_idx</span><span class="p">])</span>
+        <span class="n">restecg_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">restecg_idx</span><span class="p">])</span>
+        <span class="n">thalach_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">thalach_idx</span><span class="p">])</span>
+        <span class="n">exang_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">exang_idx</span><span class="p">])</span>
+        <span class="n">oldpeak_val</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">oldpeak_idx</span><span class="p">])</span>
+        <span class="n">slope_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">slope_idx</span><span class="p">])</span>
+        <span class="n">ca_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">ca_idx</span><span class="p">])</span>
+        <span class="n">thal_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">thal_idx</span><span class="p">])</span>
+        <span class="n">target_val</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="n">target_idx</span><span class="p">])</span>
+
+        <span class="c1"># Insert into patients table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            INSERT INTO patients (patient_id, age, sex)</span>
+<span class="s2">            VALUES (?, ?, ?)</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">patient_id_val</span><span class="p">,</span> <span class="n">age_val</span><span class="p">,</span> <span class="n">sex_val</span><span class="p">))</span>
+
+        <span class="c1"># Insert into measurements table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            INSERT INTO measurements (</span>
+<span class="s2">                patient_id, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal</span>
+<span class="s2">            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">patient_id_val</span><span class="p">,</span> <span class="n">trestbps_val</span><span class="p">,</span> <span class="n">chol_val</span><span class="p">,</span> <span class="n">fbs_val</span><span class="p">,</span> <span class="n">restecg_val</span><span class="p">,</span> <span class="n">thalach_val</span><span class="p">,</span> <span class="n">exang_val</span><span class="p">,</span> <span class="n">oldpeak_val</span><span class="p">,</span> <span class="n">slope_val</span><span class="p">,</span> <span class="n">ca_val</span><span class="p">,</span> <span class="n">thal_val</span><span class="p">))</span>
+
+        <span class="c1"># Insert into diagnosis table</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            INSERT INTO diagnosis (patient_id, cp_type, target)</span>
+<span class="s2">            VALUES (?, ?, ?)</span>
+<span class="s2">        &quot;&quot;&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">patient_id_val</span><span class="p">,</span> <span class="n">cp_val</span><span class="p">,</span> <span class="n">target_val</span><span class="p">))</span>
+
+        <span class="n">row_number</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">conn</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Database created and populated successfully.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">52</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span><span class="s2"> CREATE TABLE measurements (</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span><span class="s2">     meas_id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span><span class="s2"> );</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span><span class="s2"> &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span><span class="s2"> CREATE TABLE diagnosis (</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span><span class="s2">     diag_id INTEGER PRIMARY KEY AUTOINCREMENT,</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">49</span><span class="s2"> );</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span><span class="s2"> &quot;&quot;&quot;</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">52</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">53</span>     <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">54</span>     <span class="n">header</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">reader</span><span class="p">)</span>  <span class="c1"># Read header row</span>
+
+<span class="nn">File /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/IPython/core/interactiveshell.py:324,</span> in <span class="ni">_modified_open</span><span class="nt">(file, *args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">317</span> <span class="k">if</span> <span class="n">file</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">}:</span>
+<span class="g g-Whitespace">    </span><span class="mi">318</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">319</span>         <span class="sa">f</span><span class="s2">&quot;IPython won&#39;t let you open fd=</span><span class="si">{</span><span class="n">file</span><span class="si">}</span><span class="s2"> by default &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">320</span>         <span class="s2">&quot;as it is likely to crash IPython. If you know what you are doing, &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">321</span>         <span class="s2">&quot;you can use builtins&#39; open.&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">322</span>     <span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">324</span> <span class="k">return</span> <span class="n">io_open</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;heart.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Connect to the SQLite database</span>
+<span class="n">db_file_path</span> <span class="o">=</span> <span class="s1">&#39;heart.db&#39;</span>  <span class="c1"># Path to the SQLite database</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">db_file_path</span><span class="p">)</span>
+
+<span class="c1"># SQL query to join tables and reconstruct the data</span>
+<span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">SELECT</span>
+<span class="s2">    patients.patient_id,</span>
+<span class="s2">    patients.age,</span>
+<span class="s2">    patients.sex,</span>
+<span class="s2">    measurements.trestbps,</span>
+<span class="s2">    measurements.chol,</span>
+<span class="s2">    measurements.fbs,</span>
+<span class="s2">    measurements.restecg,</span>
+<span class="s2">    measurements.thalach,</span>
+<span class="s2">    measurements.exang,</span>
+<span class="s2">    measurements.oldpeak,</span>
+<span class="s2">    measurements.slope,</span>
+<span class="s2">    measurements.ca,</span>
+<span class="s2">    measurements.thal,</span>
+<span class="s2">    diagnosis.cp_type,</span>
+<span class="s2">    diagnosis.target</span>
+<span class="s2">FROM</span>
+<span class="s2">    patients</span>
+<span class="s2">JOIN</span>
+<span class="s2">    measurements ON patients.patient_id = measurements.patient_id</span>
+<span class="s2">JOIN</span>
+<span class="s2">    diagnosis ON patients.patient_id = diagnosis.patient_id;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="c1"># Execute the query and load the data into a Pandas DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_sql_query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">conn</span><span class="p">)</span>
+
+<span class="c1"># Close the database connection</span>
+<span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1"># Display the first few rows of the DataFrame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   patient_id  age sex  trestbps  chol  fbs  restecg  thalach  exang  oldpeak  \
+0           1   52   1       125   212    0        1      168      0      1.0   
+1           2   53   1       140   203    1        0      155      1      3.1   
+2           3   70   1       145   174    0        1      125      1      2.6   
+3           4   61   1       148   203    0        1      161      0      0.0   
+4           5   62   0       138   294    1        1      106      0      1.9   
+
+   slope  ca  thal  cp_type  target  
+0      2   2     3        0       0  
+1      0   0     3        0       0  
+2      0   0     3        0       0  
+3      2   1     3        0       0  
+4      1   3     2        0       0  
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mlflow</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="c1"># Step 1: Set the tracking URI</span>
+<span class="n">mlflow</span><span class="o">.</span><span class="n">set_tracking_uri</span><span class="p">(</span><span class="s2">&quot;https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow&quot;</span><span class="p">)</span>
+
+<span class="c1"># Step 2: Set your DagsHub access token in the environment variables</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;MLFLOW_TRACKING_USERNAME&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Sudeepthi-Rongali&quot;</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;MLFLOW_TRACKING_PASSWORD&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;b8cf8553047a54065934eb49226ab0205416e911&quot;</span>
+
+<span class="c1"># Step 3: Create or set the experiment</span>
+<span class="n">experiment_name</span> <span class="o">=</span> <span class="s2">&quot;Heart Disease Prediction Experiments&quot;</span>
+
+<span class="c1"># Check if the experiment exists; otherwise, create it</span>
+<span class="n">experiment</span> <span class="o">=</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">get_experiment_by_name</span><span class="p">(</span><span class="n">experiment_name</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">experiment</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Experiment &#39;</span><span class="si">{</span><span class="n">experiment_name</span><span class="si">}</span><span class="s2">&#39; not found. Creating a new experiment...&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">create_experiment</span><span class="p">(</span><span class="n">experiment_name</span><span class="p">)</span>
+
+<span class="n">mlflow</span><span class="o">.</span><span class="n">set_experiment</span><span class="p">(</span><span class="n">experiment_name</span><span class="p">)</span>
+
+<span class="c1"># Step 4: Log a test experiment to verify connectivity</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Test_Run&quot;</span><span class="p">):</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;model&quot;</span><span class="p">,</span> <span class="s2">&quot;Random Forest Classifier&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;max_depth&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span> <span class="mf">0.92</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;f1_score&quot;</span><span class="p">,</span> <span class="mf">0.89</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">set_tag</span><span class="p">(</span><span class="s2">&quot;project&quot;</span><span class="p">,</span> <span class="s2">&quot;Heart Disease Prediction&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MLflow tracking URI: </span><span class="si">{</span><span class="n">mlflow</span><span class="o">.</span><span class="n">get_tracking_uri</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Experiment &#39;</span><span class="si">{</span><span class="n">experiment_name</span><span class="si">}</span><span class="s2">&#39; is ready for logging.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>🏃 View run Test_Run at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/8821e15c2116406b9a923dc6316c4268
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+MLflow tracking URI: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow
+Experiment &#39;Heart Disease Prediction Experiments&#39; is ready for logging.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Data Preprocessing&quot;</span><span class="p">):</span>
+    <span class="c1"># Step 1: Rename columns for better clarity</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+        <span class="n">columns</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="s1">&#39;Age&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;sex&#39;</span><span class="p">:</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;trestbps&#39;</span><span class="p">:</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;chol&#39;</span><span class="p">:</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;fbs&#39;</span><span class="p">:</span> <span class="s1">&#39;FastingBS&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;restecg&#39;</span><span class="p">:</span> <span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;thalach&#39;</span><span class="p">:</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;exang&#39;</span><span class="p">:</span> <span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;oldpeak&#39;</span><span class="p">:</span> <span class="s1">&#39;OldPeak&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;slope&#39;</span><span class="p">:</span> <span class="s1">&#39;ST_Slope&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;ca&#39;</span><span class="p">:</span> <span class="s1">&#39;MajorVessels&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;thal&#39;</span><span class="p">:</span> <span class="s1">&#39;Thalassemia&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;cp_type&#39;</span><span class="p">:</span> <span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;target&#39;</span><span class="p">:</span> <span class="s1">&#39;Target&#39;</span>
+        <span class="p">},</span>
+        <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Columns renamed successfully.&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Columns Renamed&quot;</span><span class="p">,</span> <span class="s2">&quot;True&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Step 2: Check for missing values</span>
+    <span class="n">missing_values</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Missing values in each column:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">missing_values</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Total Missing Values&quot;</span><span class="p">,</span> <span class="n">missing_values</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+
+    <span class="c1"># Step 3: Ensure data types are consistent and correct</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Data types before correction:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Data Types Before Correction&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()))</span>
+
+    <span class="c1"># Example: Convert columns to appropriate types (if needed)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;FastingBS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;FastingBS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ChestPainType&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ChestPainType&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Data types after correction:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Data Types After Correction&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()))</span>
+
+    <span class="c1"># Display the cleaned DataFrame</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cleaned DataFrame:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+
+    <span class="c1"># Log the cleaned DataFrame as an artifact</span>
+    <span class="n">cleaned_data_path</span> <span class="o">=</span> <span class="s2">&quot;cleaned_heart_disease.csv&quot;</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">cleaned_data_path</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">cleaned_data_path</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cleaned DataFrame saved as </span><span class="si">{</span><span class="n">cleaned_data_path</span><span class="si">}</span><span class="s2"> and logged to DagsHub.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Columns renamed successfully.
+Missing values in each column:
+patient_id        0
+Age               0
+Sex               0
+RestingBP         0
+Cholesterol       0
+FastingBS         0
+RestingECG        0
+MaxHR             0
+ExerciseAngina    0
+OldPeak           0
+ST_Slope          0
+MajorVessels      0
+Thalassemia       0
+ChestPainType     0
+Target            0
+dtype: int64
+
+Data types before correction:
+patient_id          int64
+Age                 int64
+Sex                object
+RestingBP           int64
+Cholesterol         int64
+FastingBS           int64
+RestingECG          int64
+MaxHR               int64
+ExerciseAngina      int64
+OldPeak           float64
+ST_Slope            int64
+MajorVessels        int64
+Thalassemia         int64
+ChestPainType       int64
+Target              int64
+dtype: object
+
+Data types after correction:
+patient_id          int64
+Age                 int64
+Sex                 int64
+RestingBP           int64
+Cholesterol         int64
+FastingBS           int64
+RestingECG          int64
+MaxHR               int64
+ExerciseAngina      int64
+OldPeak           float64
+ST_Slope            int64
+MajorVessels        int64
+Thalassemia         int64
+ChestPainType       int64
+Target              int64
+dtype: object
+
+Cleaned DataFrame:
+   patient_id  Age  Sex  RestingBP  Cholesterol  FastingBS  RestingECG  MaxHR  \
+0           1   52    1        125          212          0           1    168   
+1           2   53    1        140          203          1           0    155   
+2           3   70    1        145          174          0           1    125   
+3           4   61    1        148          203          0           1    161   
+4           5   62    0        138          294          1           1    106   
+
+   ExerciseAngina  OldPeak  ST_Slope  MajorVessels  Thalassemia  \
+0               0      1.0         2             2            3   
+1               1      3.1         0             0            3   
+2               1      2.6         0             0            3   
+3               0      0.0         2             1            3   
+4               0      1.9         1             3            2   
+
+   ChestPainType  Target  
+0              0       0  
+1              0       0  
+2              0       0  
+3              0       0  
+4              0       0  
+
+Cleaned DataFrame saved as cleaned_heart_disease.csv and logged to DagsHub.
+🏃 View run Data Preprocessing at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/79330e9cbc73441482957d24d53a6d82
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;EDA and Visualization&quot;</span><span class="p">):</span>
+    <span class="c1"># Descriptive statistics</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Summary statistics:&quot;</span><span class="p">)</span>
+    <span class="n">summary_stats</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">summary_stats</span><span class="p">)</span>
+    <span class="c1"># Log descriptive statistics as a CSV artifact</span>
+    <span class="n">summary_stats_path</span> <span class="o">=</span> <span class="s2">&quot;summary_statistics.csv&quot;</span>
+    <span class="n">summary_stats</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">summary_stats_path</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">summary_stats_path</span><span class="p">)</span>
+
+    <span class="c1"># Count the distribution of the target variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Target variable distribution:&quot;</span><span class="p">)</span>
+    <span class="n">target_distribution</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_distribution</span><span class="p">)</span>
+    <span class="c1"># Log target variable distribution as a parameter</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Target Distribution&quot;</span><span class="p">,</span> <span class="n">target_distribution</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="c1"># Visualizing the distribution of numerical variables</span>
+    <span class="n">numerical_columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> <span class="s1">&#39;OldPeak&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Plot histograms for numerical columns</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">numerical_columns</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">column</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Distribution of </span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># Save the plot and log it as an artifact</span>
+        <span class="n">plot_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">_distribution.png&quot;</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">plot_path</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">plot_path</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">EDA and visualizations logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Summary statistics:
+        patient_id          Age          Sex    RestingBP  Cholesterol  \
+count  1025.000000  1025.000000  1025.000000  1025.000000   1025.00000   
+mean    513.000000    54.434146     0.695610   131.611707    246.00000   
+std     296.036315     9.072290     0.460373    17.516718     51.59251   
+min       1.000000    29.000000     0.000000    94.000000    126.00000   
+25%     257.000000    48.000000     0.000000   120.000000    211.00000   
+50%     513.000000    56.000000     1.000000   130.000000    240.00000   
+75%     769.000000    61.000000     1.000000   140.000000    275.00000   
+max    1025.000000    77.000000     1.000000   200.000000    564.00000   
+
+         FastingBS   RestingECG        MaxHR  ExerciseAngina      OldPeak  \
+count  1025.000000  1025.000000  1025.000000     1025.000000  1025.000000   
+mean      0.149268     0.529756   149.114146        0.336585     1.071512   
+std       0.356527     0.527878    23.005724        0.472772     1.175053   
+min       0.000000     0.000000    71.000000        0.000000     0.000000   
+25%       0.000000     0.000000   132.000000        0.000000     0.000000   
+50%       0.000000     1.000000   152.000000        0.000000     0.800000   
+75%       0.000000     1.000000   166.000000        1.000000     1.800000   
+max       1.000000     2.000000   202.000000        1.000000     6.200000   
+
+          ST_Slope  MajorVessels  Thalassemia  ChestPainType       Target  
+count  1025.000000   1025.000000  1025.000000    1025.000000  1025.000000  
+mean      1.385366      0.754146     2.323902       0.942439     0.513171  
+std       0.617755      1.030798     0.620660       1.029641     0.500070  
+min       0.000000      0.000000     0.000000       0.000000     0.000000  
+25%       1.000000      0.000000     2.000000       0.000000     0.000000  
+50%       1.000000      0.000000     2.000000       1.000000     1.000000  
+75%       2.000000      1.000000     3.000000       2.000000     1.000000  
+max       2.000000      4.000000     3.000000       3.000000     1.000000  
+
+Target variable distribution:
+Target
+1    526
+0    499
+Name: count, dtype: int64
+</pre></div>
+</div>
+<img alt="../_images/642f8e5ac06f9f5b550b6b97c6318f0a440c1b45720ff927f693df0c0c0b3b9a.png" src="../_images/642f8e5ac06f9f5b550b6b97c6318f0a440c1b45720ff927f693df0c0c0b3b9a.png" />
+<img alt="../_images/5ac6b450d31ecdbdff10e30d5930af824af1d6f3cb816310956655dad0b68303.png" src="../_images/5ac6b450d31ecdbdff10e30d5930af824af1d6f3cb816310956655dad0b68303.png" />
+<img alt="../_images/5cf90bcf6dbc9fc7a90dc3a63c83e33fd2ff0f65194fa1711dcdb7406e3d8bde.png" src="../_images/5cf90bcf6dbc9fc7a90dc3a63c83e33fd2ff0f65194fa1711dcdb7406e3d8bde.png" />
+<img alt="../_images/942e119b55b4b2293caaee9863b80b77b32b3db8e0492ee2b648130ca0be776a.png" src="../_images/942e119b55b4b2293caaee9863b80b77b32b3db8e0492ee2b648130ca0be776a.png" />
+<img alt="../_images/27ca08fd37b2b115bd25d09bf7359dd1fa729a2799688aab2edd17a08d0eb3a9.png" src="../_images/27ca08fd37b2b115bd25d09bf7359dd1fa729a2799688aab2edd17a08d0eb3a9.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>EDA and visualizations logged to DagsHub successfully!
+🏃 View run EDA and Visualization at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/342885e62907420a8ffa177f73646b40
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Correlation and Visualizations&quot;</span><span class="p">):</span>
+    <span class="c1"># Heatmap to show correlations</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;.2f&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation Matrix&quot;</span><span class="p">)</span>
+    <span class="c1"># Save and show heatmap</span>
+    <span class="n">heatmap_path</span> <span class="o">=</span> <span class="s2">&quot;correlation_matrix.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">heatmap_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">heatmap_path</span><span class="p">)</span>
+
+    <span class="c1"># Scatter plot: Age vs MaxHR</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Target&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Age vs MaxHR (Colored by Target)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Age&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;MaxHR&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Target&#39;</span><span class="p">)</span>
+    <span class="c1"># Save and show scatter plot</span>
+    <span class="n">scatterplot_path</span> <span class="o">=</span> <span class="s2">&quot;age_vs_maxhr.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">scatterplot_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">scatterplot_path</span><span class="p">)</span>
+
+    <span class="c1"># Boxplot: ChestPainType vs Target</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;OldPeak&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;Target&#39;</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">&#39;Set2&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Chest Pain Type vs OldPeak (Colored by Target)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Chest Pain Type&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;OldPeak&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Target&#39;</span><span class="p">)</span>
+    <span class="c1"># Save and show boxplot</span>
+    <span class="n">boxplot_path</span> <span class="o">=</span> <span class="s2">&quot;chestpain_vs_oldpeak.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">boxplot_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">boxplot_path</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Correlation and visualizations logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/7f392a2706803af4761fe10857ad03731750566113e285f8b677cb974856e5c2.png" src="../_images/7f392a2706803af4761fe10857ad03731750566113e285f8b677cb974856e5c2.png" />
+<img alt="../_images/af7ea0e0575318e42ee84d9795d5c4a67c534688d8704772b7ad82c01c50e380.png" src="../_images/af7ea0e0575318e42ee84d9795d5c4a67c534688d8704772b7ad82c01c50e380.png" />
+<img alt="../_images/6c7985422cbacde371c4605b3fd2d1ca65cb30b343e8f45ffbe3c572dbc8b84a.png" src="../_images/6c7985422cbacde371c4605b3fd2d1ca65cb30b343e8f45ffbe3c572dbc8b84a.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation and visualizations logged to DagsHub successfully!
+🏃 View run Correlation and Visualizations at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/6a1e5a7e2ddb44c68f287cafc8f92ac0
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Train-Test Split&quot;</span><span class="p">):</span>
+    <span class="c1"># Check the distribution of the target variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distribution of Target in the entire dataset:&quot;</span><span class="p">)</span>
+    <span class="n">target_distribution</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">target_distribution</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Overall Target Distribution&quot;</span><span class="p">,</span> <span class="n">target_distribution</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="c1"># Perform stratified train/test split to maintain class balance</span>
+    <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">,</span> <span class="s1">&#39;patient_id&#39;</span><span class="p">])</span>  <span class="c1"># Exclude the target and patient ID</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Target&#39;</span><span class="p">]</span>
+
+    <span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span>
+        <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Verify the class distribution in the train and test splits</span>
+    <span class="n">train_distribution</span> <span class="o">=</span> <span class="n">y_train</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">test_distribution</span> <span class="o">=</span> <span class="n">y_test</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Distribution of Target in the training set:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">train_distribution</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Train Target Distribution&quot;</span><span class="p">,</span> <span class="n">train_distribution</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Distribution of Target in the test set:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_distribution</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Test Target Distribution&quot;</span><span class="p">,</span> <span class="n">test_distribution</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="c1"># Save the train and test splits as artifacts</span>
+    <span class="n">X_train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;X_train.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">X_test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;X_test.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">y_train</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;y_train.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">y_test</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;y_test.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="s2">&quot;X_train.csv&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="s2">&quot;X_test.csv&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="s2">&quot;y_train.csv&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="s2">&quot;y_test.csv&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Train-test split logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Distribution of Target in the entire dataset:
+Target
+1    0.513171
+0    0.486829
+Name: proportion, dtype: float64
+
+Distribution of Target in the training set:
+Target
+1    0.513415
+0    0.486585
+Name: proportion, dtype: float64
+
+Distribution of Target in the test set:
+Target
+1    0.512195
+0    0.487805
+Name: proportion, dtype: float64
+
+Train-test split logged to DagsHub successfully!
+🏃 View run Train-Test Split at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/7352229dbae24a85b735fd4e479a2528
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Feature Analysis and Missing Values&quot;</span><span class="p">):</span>
+    <span class="c1"># Re-analyze the correlation matrix to focus on feature relationships with Target</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">feature_target_correlation</span> <span class="o">=</span> <span class="n">correlation_matrix</span><span class="p">[[</span><span class="s1">&#39;Target&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Target&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">feature_target_correlation</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;coolwarm&quot;</span><span class="p">,</span> <span class="n">cbar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Correlation of Features with Target&quot;</span><span class="p">)</span>
+    <span class="c1"># Save and show heatmap</span>
+    <span class="n">heatmap_path</span> <span class="o">=</span> <span class="s2">&quot;feature_target_correlation.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">heatmap_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">heatmap_path</span><span class="p">)</span>
+
+    <span class="c1"># Analyze distributions of numerical features for capped values and outliers</span>
+    <span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X_train</span><span class="p">[</span><span class="n">column</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Boxplot of </span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="n">column</span><span class="p">)</span>
+        <span class="c1"># Save and show boxplot</span>
+        <span class="n">boxplot_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">column</span><span class="si">}</span><span class="s2">_boxplot.png&quot;</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">boxplot_path</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">boxplot_path</span><span class="p">)</span>
+
+    <span class="c1"># Check for missing values</span>
+    <span class="n">missing_values_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="n">missing_values_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing values in training data:&quot;</span><span class="p">)</span>
+    <span class="n">train_missing_summary</span> <span class="o">=</span> <span class="n">missing_values_train</span><span class="p">[</span><span class="n">missing_values_train</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">train_missing_summary</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Missing Values in Training Data&quot;</span><span class="p">,</span> <span class="n">train_missing_summary</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Missing values in testing data:&quot;</span><span class="p">)</span>
+    <span class="n">test_missing_summary</span> <span class="o">=</span> <span class="n">missing_values_test</span><span class="p">[</span><span class="n">missing_values_test</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_missing_summary</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Missing Values in Testing Data&quot;</span><span class="p">,</span> <span class="n">test_missing_summary</span><span class="o">.</span><span class="n">to_dict</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Feature analysis and missing value checks logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/f880ae26c7a8f87a5de4e1d61f697e33a6df162221a84c8e42d2db7197bfa2f1.png" src="../_images/f880ae26c7a8f87a5de4e1d61f697e33a6df162221a84c8e42d2db7197bfa2f1.png" />
+<img alt="../_images/d4316afbf86d35e8667f808d3b407fc49dca9505c4d94a0ccaf811da80aeb046.png" src="../_images/d4316afbf86d35e8667f808d3b407fc49dca9505c4d94a0ccaf811da80aeb046.png" />
+<img alt="../_images/0584d1e140cb23ec5bd944858062138bb6210c48db5fc87ff5e57adaa9edbe8c.png" src="../_images/0584d1e140cb23ec5bd944858062138bb6210c48db5fc87ff5e57adaa9edbe8c.png" />
+<img alt="../_images/222b782230f711b38532a59a87025886cb8ab2eac081eb463580ebda551a0475.png" src="../_images/222b782230f711b38532a59a87025886cb8ab2eac081eb463580ebda551a0475.png" />
+<img alt="../_images/fd039a408e0e601704e55798451ac7e26dbe91d94795032e69ed4c97e99d62bb.png" src="../_images/fd039a408e0e601704e55798451ac7e26dbe91d94795032e69ed4c97e99d62bb.png" />
+<img alt="../_images/26e3701cb794bc193e57189dc9b2342dd08c78e1b16bddbb52c0c70a9c114870.png" src="../_images/26e3701cb794bc193e57189dc9b2342dd08c78e1b16bddbb52c0c70a9c114870.png" />
+<img alt="../_images/6f4e171de67b240e7757b17a2e1b4b7605bfae7b818dd4884556f45e9809c6d4.png" src="../_images/6f4e171de67b240e7757b17a2e1b4b7605bfae7b818dd4884556f45e9809c6d4.png" />
+<img alt="../_images/a6f7a22013a455482336ef231a1f1e81a505d5f65242a51725d1eff78118bc85.png" src="../_images/a6f7a22013a455482336ef231a1f1e81a505d5f65242a51725d1eff78118bc85.png" />
+<img alt="../_images/e51b0c0beca7f5d647bc380110e2e06c728f67f3b259c5178f30260066deb7aa.png" src="../_images/e51b0c0beca7f5d647bc380110e2e06c728f67f3b259c5178f30260066deb7aa.png" />
+<img alt="../_images/fad860c699eb9717087388f1f583f31460689adc882057d7ea519ecb657bf89d.png" src="../_images/fad860c699eb9717087388f1f583f31460689adc882057d7ea519ecb657bf89d.png" />
+<img alt="../_images/a7e606dc69819df7e03a8609128c96b18c875717c9ab05d5922a010b83fbf771.png" src="../_images/a7e606dc69819df7e03a8609128c96b18c875717c9ab05d5922a010b83fbf771.png" />
+<img alt="../_images/2609f4d406dca14d9bc0c08412647f9bf7fbdc1007e95a7c33173e325224bf78.png" src="../_images/2609f4d406dca14d9bc0c08412647f9bf7fbdc1007e95a7c33173e325224bf78.png" />
+<img alt="../_images/9adb6f3d7f95d986a6be72191c1de8bd781418b269aef9e70c576551184375ea.png" src="../_images/9adb6f3d7f95d986a6be72191c1de8bd781418b269aef9e70c576551184375ea.png" />
+<img alt="../_images/93eb19f6e5f661e32eb60bf61a7025b6a9d5c89b8660d14a63fdb717ef6111a8.png" src="../_images/93eb19f6e5f661e32eb60bf61a7025b6a9d5c89b8660d14a63fdb717ef6111a8.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Missing values in training data:
+Series([], dtype: int64)
+
+Missing values in testing data:
+Series([], dtype: int64)
+
+Feature analysis and missing value checks logged to DagsHub successfully!
+🏃 View run Feature Analysis and Missing Values at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/3a660aabe9144b6faa3aa7e47a35cc54
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Logistic Regression Model with Cross-Validation&quot;</span><span class="p">):</span>
+    <span class="c1"># 1. Cap outliers in RestingBP and Cholesterol</span>
+    <span class="k">def</span> <span class="nf">cap_outliers</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">lower_percentile</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">upper_percentile</span><span class="o">=</span><span class="mi">99</span><span class="p">):</span>
+        <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">lower_percentile</span><span class="p">)</span>
+        <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">upper_percentile</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span><span class="p">)</span>
+
+    <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;RestingBP&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_outliers</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;RestingBP&#39;</span><span class="p">])</span>
+    <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_outliers</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">])</span>
+    <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;RestingBP&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_outliers</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;RestingBP&#39;</span><span class="p">])</span>
+    <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_outliers</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">])</span>
+    
+    <span class="c1"># Log the capping process</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Outliers Capped for RestingBP and Cholesterol&quot;</span><span class="p">,</span> <span class="s2">&quot;True&quot;</span><span class="p">)</span>
+
+    <span class="c1"># 2. Preprocessing pipeline</span>
+    <span class="c1"># Identify numerical and categorical columns</span>
+    <span class="n">numerical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> <span class="s1">&#39;OldPeak&#39;</span><span class="p">]</span>
+    <span class="n">categorical_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span> <span class="s1">&#39;FastingBS&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span> <span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">,</span> <span class="s1">&#39;ST_Slope&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Preprocessing steps</span>
+    <span class="n">numerical_transformer</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+    <span class="n">categorical_transformer</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">(</span><span class="n">handle_unknown</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+
+    <span class="n">preprocessor</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+        <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">numerical_transformer</span><span class="p">,</span> <span class="n">numerical_features</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="n">categorical_transformer</span><span class="p">,</span> <span class="n">categorical_features</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="c1"># 3. Create pipeline</span>
+    <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">))</span>
+    <span class="p">])</span>
+
+    <span class="c1"># 4. Cross-validation</span>
+    <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log cross-validation results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cross-validation F1-scores:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cv_scores</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Mean F1-score&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;F1-score Std Dev&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Cross-validation F1-scores&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cross-validation results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cross-validation F1-scores:
+[0.84587814 0.83448276 0.78200692]
+Mean F1-score: 0.8208
+Standard Deviation: 0.0278
+Cross-validation results logged to DagsHub successfully!
+🏃 View run Logistic Regression Model with Cross-Validation at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/41409c70a5ec44de930956f7f7709b82
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">RidgeClassifier</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Model Comparison Experiment&quot;</span><span class="p">):</span>
+    <span class="c1"># Define models for comparison</span>
+    <span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;LogisticRegression&#39;</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span>
+        <span class="s1">&#39;RidgeClassifier&#39;</span><span class="p">:</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+        <span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Dictionary to store results</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Iterate over models and perform cross-validation</span>
+    <span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Training </span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+        <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
+        <span class="p">])</span>
+        
+        <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+        <span class="n">results</span><span class="p">[</span><span class="n">model_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;mean_f1&#39;</span><span class="p">:</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+            <span class="s1">&#39;std_f1&#39;</span><span class="p">:</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span>
+            <span class="s1">&#39;cv_scores&#39;</span><span class="p">:</span> <span class="n">cv_scores</span>
+        <span class="p">}</span>
+        
+        <span class="c1"># Log results for each model</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Mean_F1&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Std_F1&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_CV_Scores&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cross-validation F1-scores: </span><span class="si">{</span><span class="n">cv_scores</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Display the results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary of Experiment #2 Results:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">: Mean F1 = </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;mean_f1&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, Std Dev = </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;std_f1&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Summary&quot;</span><span class="p">,</span> <span class="p">{</span>
+            <span class="s2">&quot;Mean F1&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;mean_f1&#39;</span><span class="p">],</span>
+            <span class="s2">&quot;Std Dev F1&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;std_f1&#39;</span><span class="p">]</span>
+        <span class="p">})</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Model comparison results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Training LogisticRegression...
+Cross-validation F1-scores: [0.84587814 0.83448276 0.78200692]
+Mean F1-score: 0.8208
+Standard Deviation: 0.0278
+
+Training RidgeClassifier...
+Cross-validation F1-scores: [0.85211268 0.84137931 0.77241379]
+Mean F1-score: 0.8220
+Standard Deviation: 0.0353
+
+Training RandomForestClassifier...
+Cross-validation F1-scores: [0.95890411 0.96402878 0.95438596]
+Mean F1-score: 0.9591
+Standard Deviation: 0.0039
+
+Summary of Experiment #2 Results:
+LogisticRegression: Mean F1 = 0.8208, Std Dev = 0.0278
+RidgeClassifier: Mean F1 = 0.8220, Std Dev = 0.0353
+RandomForestClassifier: Mean F1 = 0.9591, Std Dev = 0.0039
+
+Model comparison results logged to DagsHub successfully!
+🏃 View run Model Comparison Experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/c05c55d4bfbf4eb6abdf58fbf9c4bebe
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Feature Engineering and Logistic Regression&quot;</span><span class="p">):</span>
+    <span class="c1"># 1. Create new engineered features</span>
+    <span class="n">X_train</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># Avoid modifying the original data</span>
+    <span class="n">X_test</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># Calculate new features</span>
+    <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;HeartRateReserve&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">220</span> <span class="o">-</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;MaxHR&#39;</span><span class="p">]</span>
+    <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;HeartRateReserve&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">220</span> <span class="o">-</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;MaxHR&#39;</span><span class="p">]</span>
+
+    <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;CholesterolToAgeRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span>
+    <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;CholesterolToAgeRatio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;Cholesterol&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span>
+
+    <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;ExerciseImpactIndex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;OldPeak&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">X_train</span><span class="p">[</span><span class="s1">&#39;ST_Slope&#39;</span><span class="p">]</span>
+    <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;ExerciseImpactIndex&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;OldPeak&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="n">X_test</span><span class="p">[</span><span class="s1">&#39;ST_Slope&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Log new features created</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;New Features&quot;</span><span class="p">,</span> <span class="p">[</span>
+        <span class="s2">&quot;HeartRateReserve&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CholesterolToAgeRatio&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;ExerciseImpactIndex&quot;</span>
+    <span class="p">])</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">New features engineered and added to datasets.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Add new features to the numerical features list</span>
+    <span class="n">numerical_features</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="s1">&#39;HeartRateReserve&#39;</span><span class="p">,</span> <span class="s1">&#39;CholesterolToAgeRatio&#39;</span><span class="p">,</span> <span class="s1">&#39;ExerciseImpactIndex&#39;</span><span class="p">])</span>
+
+    <span class="c1"># 2. Recreate the preprocessing pipeline to include new features</span>
+    <span class="n">preprocessor</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+        <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">numerical_transformer</span><span class="p">,</span> <span class="n">numerical_features</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="n">categorical_transformer</span><span class="p">,</span> <span class="n">categorical_features</span><span class="p">)</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="c1"># 3. Test Logistic Regression with new features</span>
+    <span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor</span><span class="p">),</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">))</span>
+    <span class="p">])</span>
+
+    <span class="c1"># Perform cross-validation</span>
+    <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log cross-validation results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cross-validation F1-scores with new features:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cv_scores</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Mean F1-score with New Features&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;F1-score Std Dev with New Features&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Cross-validation F1-scores with New Features&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Feature engineering and logistic regression results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>New features engineered and added to datasets.
+
+Cross-validation F1-scores with new features:
+[0.84697509 0.83448276 0.79037801]
+Mean F1-score: 0.8239
+Standard Deviation: 0.0243
+
+Feature engineering and logistic regression results logged to DagsHub successfully!
+🏃 View run Feature Engineering and Logistic Regression at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/a13dd1d3e540441a8eecc0acd500e589
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">VarianceThreshold</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Feature Selection&quot;</span><span class="p">):</span>
+    <span class="c1"># 1. Correlation Threshold</span>
+    <span class="c1"># Compute the correlation matrix</span>
+    <span class="n">correlation_matrix</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+    <span class="n">correlation_threshold</span> <span class="o">=</span> <span class="mf">0.9</span>  <span class="c1"># Threshold for high correlation</span>
+    <span class="n">correlated_features</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="o">.</span><span class="n">columns</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">correlation_threshold</span><span class="p">:</span>
+                <span class="n">correlated_features</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">correlation_matrix</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Features removed due to high correlation:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">correlated_features</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Features Removed Due to High Correlation&quot;</span><span class="p">,</span> <span class="nb">list</span><span class="p">(</span><span class="n">correlated_features</span><span class="p">))</span>
+
+    <span class="n">X_train_corr</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">correlated_features</span><span class="p">)</span>
+    <span class="n">X_test_corr</span> <span class="o">=</span> <span class="n">X_test</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">correlated_features</span><span class="p">)</span>
+
+    <span class="c1"># 2. Feature Importance (Random Forest)</span>
+    <span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+    <span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="n">importances</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">feature_importances_</span>
+    <span class="n">importance_threshold</span> <span class="o">=</span> <span class="mf">0.01</span>  <span class="c1"># Features below this threshold will be removed</span>
+
+    <span class="n">important_features</span> <span class="o">=</span> <span class="p">[</span><span class="n">feature</span> <span class="k">for</span> <span class="n">feature</span><span class="p">,</span> <span class="n">importance</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">importances</span><span class="p">)</span> <span class="k">if</span> <span class="n">importance</span> <span class="o">&gt;</span> <span class="n">importance_threshold</span><span class="p">]</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Features selected based on importance threshold:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">important_features</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Features Selected by Importance&quot;</span><span class="p">,</span> <span class="n">important_features</span><span class="p">)</span>
+
+    <span class="n">X_train_importance</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="n">important_features</span><span class="p">]</span>
+    <span class="n">X_test_importance</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="n">important_features</span><span class="p">]</span>
+
+    <span class="c1"># 3. Variance Threshold</span>
+    <span class="c1"># Remove low-variance features</span>
+    <span class="n">variance_threshold</span> <span class="o">=</span> <span class="mf">0.01</span>  <span class="c1"># Minimum variance required to keep the feature</span>
+    <span class="n">selector</span> <span class="o">=</span> <span class="n">VarianceThreshold</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="n">variance_threshold</span><span class="p">)</span>
+    <span class="n">selector</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+
+    <span class="n">selected_features</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">selector</span><span class="o">.</span><span class="n">get_support</span><span class="p">()]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Features selected based on variance threshold:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">selected_features</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Features Selected by Variance Threshold&quot;</span><span class="p">,</span> <span class="n">selected_features</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="n">X_train_variance</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="n">selected_features</span><span class="p">]</span>
+    <span class="n">X_test_variance</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="n">selected_features</span><span class="p">]</span>
+
+    <span class="c1"># Summary of selected features from all methods</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary of selected features:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correlation Threshold:&quot;</span><span class="p">,</span> <span class="n">X_train_corr</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Feature Importance:&quot;</span><span class="p">,</span> <span class="n">X_train_importance</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variance Threshold:&quot;</span><span class="p">,</span> <span class="n">X_train_variance</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Correlation Threshold Features&quot;</span><span class="p">,</span> <span class="n">X_train_corr</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Feature Importance Features&quot;</span><span class="p">,</span> <span class="n">X_train_importance</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Variance Threshold Features&quot;</span><span class="p">,</span> <span class="n">X_train_variance</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Feature selection process logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Features removed due to high correlation:
+{&#39;HeartRateReserve&#39;}
+
+Features selected based on importance threshold:
+[&#39;Age&#39;, &#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;RestingECG&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;, &#39;HeartRateReserve&#39;, &#39;CholesterolToAgeRatio&#39;, &#39;ExerciseImpactIndex&#39;]
+
+Features selected based on variance threshold:
+[&#39;Age&#39;, &#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;FastingBS&#39;, &#39;RestingECG&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;, &#39;HeartRateReserve&#39;, &#39;CholesterolToAgeRatio&#39;, &#39;ExerciseImpactIndex&#39;]
+
+Summary of selected features:
+Correlation Threshold: [&#39;Age&#39;, &#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;FastingBS&#39;, &#39;RestingECG&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;, &#39;CholesterolToAgeRatio&#39;, &#39;ExerciseImpactIndex&#39;]
+Feature Importance: [&#39;Age&#39;, &#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;RestingECG&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;, &#39;HeartRateReserve&#39;, &#39;CholesterolToAgeRatio&#39;, &#39;ExerciseImpactIndex&#39;]
+Variance Threshold: [&#39;Age&#39;, &#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;FastingBS&#39;, &#39;RestingECG&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;, &#39;HeartRateReserve&#39;, &#39;CholesterolToAgeRatio&#39;, &#39;ExerciseImpactIndex&#39;]
+
+Feature selection process logged to DagsHub successfully!
+🏃 View run Feature Selection at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/658cb7377d5e4012bd3c3c692b6ec010
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">OneHotEncoder</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Model Evaluation with Selected Features&quot;</span><span class="p">):</span>
+    <span class="c1"># Use features selected by Feature Importance</span>
+    <span class="n">selected_features</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;Sex&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingBP&#39;</span><span class="p">,</span> <span class="s1">&#39;Cholesterol&#39;</span><span class="p">,</span> <span class="s1">&#39;RestingECG&#39;</span><span class="p">,</span> <span class="s1">&#39;MaxHR&#39;</span><span class="p">,</span> 
+                         <span class="s1">&#39;ExerciseAngina&#39;</span><span class="p">,</span> <span class="s1">&#39;OldPeak&#39;</span><span class="p">,</span> <span class="s1">&#39;ST_Slope&#39;</span><span class="p">,</span> <span class="s1">&#39;MajorVessels&#39;</span><span class="p">,</span> 
+                         <span class="s1">&#39;Thalassemia&#39;</span><span class="p">,</span> <span class="s1">&#39;ChestPainType&#39;</span><span class="p">,</span> <span class="s1">&#39;CholesterolToAgeRatio&#39;</span><span class="p">,</span> 
+                         <span class="s1">&#39;ExerciseImpactIndex&#39;</span><span class="p">]</span>
+
+    <span class="n">X_train_selected</span> <span class="o">=</span> <span class="n">X_train</span><span class="p">[</span><span class="n">selected_features</span><span class="p">]</span>
+    <span class="n">X_test_selected</span> <span class="o">=</span> <span class="n">X_test</span><span class="p">[</span><span class="n">selected_features</span><span class="p">]</span>
+
+    <span class="c1"># Log selected features</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Selected Features&quot;</span><span class="p">,</span> <span class="n">selected_features</span><span class="p">)</span>
+
+    <span class="c1"># Preprocessing pipeline for selected features</span>
+    <span class="n">preprocessor_selected</span> <span class="o">=</span> <span class="n">ColumnTransformer</span><span class="p">(</span>
+        <span class="n">transformers</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;num&#39;</span><span class="p">,</span> <span class="n">numerical_transformer</span><span class="p">,</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">selected_features</span> <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">numerical_features</span><span class="p">]),</span>
+            <span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="n">categorical_transformer</span><span class="p">,</span> <span class="p">[</span><span class="n">col</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">selected_features</span> <span class="k">if</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">categorical_features</span><span class="p">])</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Models for evaluation</span>
+    <span class="n">models</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;LogisticRegression&#39;</span><span class="p">:</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">),</span>
+        <span class="s1">&#39;RandomForestClassifier&#39;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1"># Dictionary to store results</span>
+    <span class="n">results_selected</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="c1"># Train and evaluate models with selected features</span>
+    <span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model</span> <span class="ow">in</span> <span class="n">models</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Training </span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2"> with selected features...&quot;</span><span class="p">)</span>
+        <span class="n">pipeline_selected</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;preprocessor&#39;</span><span class="p">,</span> <span class="n">preprocessor_selected</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
+        <span class="p">])</span>
+        
+        <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline_selected</span><span class="p">,</span> <span class="n">X_train_selected</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+        <span class="n">results_selected</span><span class="p">[</span><span class="n">model_name</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;mean_f1&#39;</span><span class="p">:</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span>
+            <span class="s1">&#39;std_f1&#39;</span><span class="p">:</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span>
+            <span class="s1">&#39;cv_scores&#39;</span><span class="p">:</span> <span class="n">cv_scores</span>
+        <span class="p">}</span>
+        
+        <span class="c1"># Log results for each model</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Mean_F1&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Std_F1&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_CV_Scores&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Cross-validation F1-scores: </span><span class="si">{</span><span class="n">cv_scores</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Display summary of results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Summary of Experiment #4 Results with Selected Features:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">result</span> <span class="ow">in</span> <span class="n">results_selected</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">: Mean F1 = </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;mean_f1&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">, Std Dev = </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;std_f1&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">model_name</span><span class="si">}</span><span class="s2">_Summary&quot;</span><span class="p">,</span> <span class="p">{</span>
+            <span class="s2">&quot;Mean F1&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;mean_f1&#39;</span><span class="p">],</span>
+            <span class="s2">&quot;Std Dev F1&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">[</span><span class="s1">&#39;std_f1&#39;</span><span class="p">]</span>
+        <span class="p">})</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Model evaluation with selected features logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Training LogisticRegression with selected features...
+Cross-validation F1-scores: [0.84697509 0.83044983 0.80139373]
+Mean F1-score: 0.8263
+Standard Deviation: 0.0188
+
+Training RandomForestClassifier with selected features...
+Cross-validation F1-scores: [0.95890411 0.97508897 0.95104895]
+Mean F1-score: 0.9617
+Standard Deviation: 0.0100
+
+Summary of Experiment #4 Results with Selected Features:
+LogisticRegression: Mean F1 = 0.8263, Std Dev = 0.0188
+RandomForestClassifier: Mean F1 = 0.9617, Std Dev = 0.0100
+
+Model evaluation with selected features logged to DagsHub successfully!
+🏃 View run Model Evaluation with Selected Features at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/a5525b7932cd48079ea5265402bf8c61
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;PCA and Logistic Regression&quot;</span><span class="p">):</span>
+    <span class="c1"># Standardize numerical features before PCA</span>
+    <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+    <span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="n">selected_features</span><span class="p">])</span>
+    <span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="n">selected_features</span><span class="p">])</span>
+
+    <span class="c1"># 1. Apply PCA</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">()</span>
+    <span class="n">X_train_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">)</span>
+    <span class="n">X_test_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+
+    <span class="c1"># Scree Plot</span>
+    <span class="n">explained_variance_ratio</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_ratio_</span>
+    <span class="n">cumulative_variance</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">explained_variance_ratio</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">cumulative_variance</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">cumulative_variance</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Scree Plot - Cumulative Explained Variance&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Number of Principal Components&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Cumulative Explained Variance&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>  <span class="c1"># Threshold at 95% explained variance</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">cumulative_variance</span> <span class="o">&gt;=</span> <span class="mf">0.95</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>  <span class="c1"># Number of components for 95% variance</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    <span class="n">scree_plot_path</span> <span class="o">=</span> <span class="s2">&quot;scree_plot.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">scree_plot_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">scree_plot_path</span><span class="p">)</span>
+
+    <span class="c1"># Select the number of components (95% variance threshold)</span>
+    <span class="n">n_components</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">cumulative_variance</span> <span class="o">&gt;=</span> <span class="mf">0.95</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Number of components to retain 95% variance: </span><span class="si">{</span><span class="n">n_components</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Log the result with a unique key</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;PCA_95_Variance_Components&quot;</span><span class="p">,</span> <span class="n">n_components</span><span class="p">)</span>
+
+    <span class="c1"># Reapply PCA with selected components</span>
+    <span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">)</span>
+    <span class="n">X_train_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">)</span>
+    <span class="n">X_test_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+
+    <span class="c1"># Train Logistic Regression with PCA components</span>
+    <span class="n">pipeline_pca</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">))</span>
+    <span class="p">])</span>
+
+    <span class="n">cv_scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline_pca</span><span class="p">,</span> <span class="n">X_train_pca</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cross-validation F1-scores with PCA components:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cv_scores</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Log metrics and results</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Mean_F1_Score_PCA&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Std_F1_Score_PCA&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;PCA_CV_Scores&quot;</span><span class="p">,</span> <span class="n">cv_scores</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">PCA analysis and logistic regression results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2f9e4fab510003804289e15c1c3ca3b1660654758bcd15d2f90034e3aee0c002.png" src="../_images/2f9e4fab510003804289e15c1c3ca3b1660654758bcd15d2f90034e3aee0c002.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Number of components to retain 95% variance: 11
+
+Cross-validation F1-scores with PCA components:
+[0.86597938 0.86111111 0.82154882]
+Mean F1-score: 0.8495
+Standard Deviation: 0.0199
+
+PCA analysis and logistic regression results logged to DagsHub successfully!
+🏃 View run PCA and Logistic Regression at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/7f022d427d8d4e9f82072cb45dfef80b
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">RFE</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;RFE Feature Selection and Model Evaluation&quot;</span><span class="p">):</span>
+    <span class="c1"># Recursive Feature Elimination (RFE)</span>
+    <span class="n">log_reg</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>  <span class="c1"># Increased max_iter to 5000</span>
+    <span class="n">rfe</span> <span class="o">=</span> <span class="n">RFE</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">log_reg</span><span class="p">,</span> <span class="n">n_features_to_select</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># Select top 10 features</span>
+
+    <span class="c1"># Standardize data before applying RFE</span>
+    <span class="n">scaler</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+    <span class="n">X_train_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="n">selected_features</span><span class="p">])</span>
+    <span class="n">X_test_scaled</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test</span><span class="p">[</span><span class="n">selected_features</span><span class="p">])</span>
+
+    <span class="c1"># Fit RFE on scaled training data</span>
+    <span class="n">X_train_rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_scaled</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">X_test_rfe</span> <span class="o">=</span> <span class="n">rfe</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_scaled</span><span class="p">)</span>
+
+    <span class="c1"># Get selected features from RFE</span>
+    <span class="n">selected_features_rfe</span> <span class="o">=</span> <span class="p">[</span><span class="n">feature</span> <span class="k">for</span> <span class="n">feature</span><span class="p">,</span> <span class="n">rank</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">selected_features</span><span class="p">,</span> <span class="n">rfe</span><span class="o">.</span><span class="n">ranking_</span><span class="p">)</span> <span class="k">if</span> <span class="n">rank</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Features selected by RFE: </span><span class="si">{</span><span class="n">selected_features_rfe</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;RFE Selected Features&quot;</span><span class="p">,</span> <span class="n">selected_features_rfe</span><span class="p">)</span>
+
+    <span class="c1"># Evaluate the model with selected features</span>
+    <span class="n">pipeline_rfe</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">steps</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;classifier&#39;</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">))</span>  <span class="c1"># Increased max_iter to 5000</span>
+    <span class="p">])</span>
+
+    <span class="n">cv_scores_rfe</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">pipeline_rfe</span><span class="p">,</span> <span class="n">X_train_rfe</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cross-validation F1-scores with RFE-selected features:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cv_scores_rfe</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores_rfe</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores_rfe</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Mean F1-score with RFE&quot;</span><span class="p">,</span> <span class="n">cv_scores_rfe</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;F1-score Std Dev with RFE&quot;</span><span class="p">,</span> <span class="n">cv_scores_rfe</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;RFE CV Scores&quot;</span><span class="p">,</span> <span class="n">cv_scores_rfe</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">RFE feature selection and model evaluation results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Features selected by RFE: [&#39;Sex&#39;, &#39;RestingBP&#39;, &#39;Cholesterol&#39;, &#39;MaxHR&#39;, &#39;ExerciseAngina&#39;, &#39;OldPeak&#39;, &#39;ST_Slope&#39;, &#39;MajorVessels&#39;, &#39;Thalassemia&#39;, &#39;ChestPainType&#39;]
+
+Cross-validation F1-scores with RFE-selected features:
+[0.86006826 0.86111111 0.82119205]
+Mean F1-score: 0.8475
+Standard Deviation: 0.0186
+
+RFE feature selection and model evaluation results logged to DagsHub successfully!
+🏃 View run RFE Feature Selection and Model Evaluation at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/8fb651b87f2449e485991cf2a5069b62
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">VotingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Voting Classifier Evaluation&quot;</span><span class="p">):</span>
+    <span class="c1"># Define base models</span>
+    <span class="n">log_reg</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
+    <span class="n">ridge_clf</span> <span class="o">=</span> <span class="n">RidgeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+    <span class="n">rf_clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="c1"># Create Voting Classifier</span>
+    <span class="n">voting_clf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span>
+        <span class="n">estimators</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">(</span><span class="s1">&#39;log_reg&#39;</span><span class="p">,</span> <span class="n">log_reg</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;ridge&#39;</span><span class="p">,</span> <span class="n">ridge_clf</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">rf_clf</span><span class="p">)</span>
+        <span class="p">],</span>
+        <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;hard&#39;</span>  <span class="c1"># Hard voting</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Perform cross-validation</span>
+    <span class="n">cv_scores_voting</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">voting_clf</span><span class="p">,</span> <span class="n">X_train_rfe</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;f1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Log cross-validation results</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Cross-validation F1-scores with Voting Classifier:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">cv_scores_voting</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mean F1-score: </span><span class="si">{</span><span class="n">cv_scores_voting</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Standard Deviation: </span><span class="si">{</span><span class="n">cv_scores_voting</span><span class="o">.</span><span class="n">std</span><span class="p">()</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;Mean F1-score Voting Classifier&quot;</span><span class="p">,</span> <span class="n">cv_scores_voting</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_metric</span><span class="p">(</span><span class="s2">&quot;F1-score Std Dev Voting Classifier&quot;</span><span class="p">,</span> <span class="n">cv_scores_voting</span><span class="o">.</span><span class="n">std</span><span class="p">())</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_param</span><span class="p">(</span><span class="s2">&quot;Voting Classifier CV Scores&quot;</span><span class="p">,</span> <span class="n">cv_scores_voting</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+
+    <span class="c1"># Train Voting Classifier on the entire training set</span>
+    <span class="n">voting_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train_rfe</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+    <span class="c1"># Evaluate on the test set</span>
+    <span class="n">test_predictions</span> <span class="o">=</span> <span class="n">voting_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test_rfe</span><span class="p">)</span>
+    <span class="n">classification_report_str</span> <span class="o">=</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">test_predictions</span><span class="p">)</span>
+
+    <span class="c1"># Log classification report</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Classification Report on Test Data:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classification_report_str</span><span class="p">)</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_text</span><span class="p">(</span><span class="n">classification_report_str</span><span class="p">,</span> <span class="s2">&quot;classification_report.txt&quot;</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Voting Classifier evaluation results logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cross-validation F1-scores with Voting Classifier:
+[0.86394558 0.87285223 0.83660131]
+Mean F1-score: 0.8578
+Standard Deviation: 0.0154
+
+Classification Report on Test Data:
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       100
+           1       0.77      0.92      0.84       105
+
+    accuracy                           0.82       205
+   macro avg       0.83      0.82      0.82       205
+weighted avg       0.83      0.82      0.82       205
+
+
+Voting Classifier evaluation results logged to DagsHub successfully!
+🏃 View run Voting Classifier Evaluation at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/99dbced049734f0f9d34d8728042a7b5
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">mlflow</span>
+
+<span class="c1"># Start an MLflow run</span>
+<span class="k">with</span> <span class="n">mlflow</span><span class="o">.</span><span class="n">start_run</span><span class="p">(</span><span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;Model Performance Comparison Plot&quot;</span><span class="p">):</span>
+    <span class="c1"># Data for the plot</span>
+    <span class="n">experiments</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s1">&#39;Logistic Regression (Baseline)&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;Ridge Classifier&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;Random Forest Classifier&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;Voting Classifier&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;RFE with Logistic Regression&#39;</span><span class="p">,</span> 
+        <span class="s1">&#39;PCA with Logistic Regression&#39;</span>
+    <span class="p">]</span>
+
+    <span class="n">f1_means</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.8208</span><span class="p">,</span> <span class="mf">0.8220</span><span class="p">,</span> <span class="mf">0.9591</span><span class="p">,</span> <span class="mf">0.8578</span><span class="p">,</span> <span class="mf">0.8475</span><span class="p">,</span> <span class="mf">0.8495</span><span class="p">]</span>
+    <span class="n">f1_stds</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.0278</span><span class="p">,</span> <span class="mf">0.0353</span><span class="p">,</span> <span class="mf">0.0039</span><span class="p">,</span> <span class="mf">0.0154</span><span class="p">,</span> <span class="mf">0.0186</span><span class="p">,</span> <span class="mf">0.0199</span><span class="p">]</span>
+
+    <span class="c1"># Plotting</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">experiments</span><span class="p">,</span> <span class="n">f1_means</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Mean F1-Score&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">experiments</span><span class="p">,</span> 
+                     <span class="p">[</span><span class="n">mean</span> <span class="o">-</span> <span class="n">std</span> <span class="k">for</span> <span class="n">mean</span><span class="p">,</span> <span class="n">std</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">f1_means</span><span class="p">,</span> <span class="n">f1_stds</span><span class="p">)],</span>
+                     <span class="p">[</span><span class="n">mean</span> <span class="o">+</span> <span class="n">std</span> <span class="k">for</span> <span class="n">mean</span><span class="p">,</span> <span class="n">std</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">f1_means</span><span class="p">,</span> <span class="n">f1_stds</span><span class="p">)],</span>
+                     <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Std Deviation&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Adding labels and title</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;right&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;F1-score&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Comparison of Model Performance Across Experiments&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+    <span class="c1"># Save and show the plot</span>
+    <span class="n">plot_path</span> <span class="o">=</span> <span class="s2">&quot;model_performance_comparison.png&quot;</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">plot_path</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+    <span class="c1"># Log the plot as an artifact</span>
+    <span class="n">mlflow</span><span class="o">.</span><span class="n">log_artifact</span><span class="p">(</span><span class="n">plot_path</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Model performance comparison plot logged to DagsHub successfully!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b9ced82108aa338268d107e43eb7800b4637b9db32b2f5c5c97d961490ba9077.png" src="../_images/b9ced82108aa338268d107e43eb7800b4637b9db32b2f5c5c97d961490ba9077.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Model performance comparison plot logged to DagsHub successfully!
+🏃 View run Model Performance Comparison Plot at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0/runs/3e6543385a27459caca61f6dd42ec7db
+🧪 View experiment at: https://dagshub.com/Sudeepthi-Rongali/my-first-repo.mlflow/#/experiments/0
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./books"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="simple visible nav section-nav flex-column">
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sudeepthi Rongali
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
